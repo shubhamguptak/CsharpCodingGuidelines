@@ -47,6 +47,23 @@ The guidelines in this document are used by **Threye interactive** when developi
 7. Ensure comments are adding value - i.e., are they stating something obvious about the code? Use the _why_, not _what_ - the code should speak for itself.
 8. Ensure comments are accurate and relevant.
 
+## Performance Considerations
+1. Avoid Frequent Use of Find and GetComponent: These methods are costly. Cache component references during initialization if possible.
+2. Minimize Use of Update: If a method doesn’t need to check conditions every frame, consider using FixedUpdate for physics-related updates or Coroutine for delayed execution.
+3. Object Pooling: Instead of instantiating and destroying objects frequently (like bullets in a shooter game), use an object pooling system.
+
+## Unity Specific Practices
+1. Serialized Fields: Use [SerializeField] private fields instead of public fields unless absolutely necessary to keep encapsulation intact while still exposing fields to the Unity Editor.
+2. Event Functions: Leverage Unity's built-in event functions like Awake, Start, Update, FixedUpdate, etc., wisely.
+3. Use Unity’s Data Types and Structures: Prefer Unity-specific structures like Vector3, Quaternion, etc., for better integration and performance.
+
+## Modular Design
+1. Component-Based Design: Decompose features into smaller, reusable components to make it easier to manage and update them.
+2. Single Responsibility Principle: Each class or component should have one reason to change, meaning it should only have one job or responsibility.
+
+## Asynchronous Programming
+1. Use async and await: For tasks that can potentially block, such as loading resources or querying a database, use asynchronous programming to keep the game running smoothly.
+2. Coroutines: Coroutines are useful for spreading work over several frames, executing tasks that need delays, or simplifying complex state machines without blocking game execution.
 
 ## Conditional compiler directives
 1. All compiler directives should use SCREAMING_CAPS.
