@@ -77,6 +77,8 @@ The guidelines in this document are used by **Threye interactive** when developi
 2. Use PascalCase and separate namespace components with a period - i.e., `Threye.Simulator`.
 3. Prefer using plural namespace and don't use generic type names such as `Element`, `Node`, `Log`, and `Message`.
 4. Do not use the same name as types in namespaces within a single application model.
+5. Descriptive Names: Choose names that clearly and concisely convey the purpose of the variable. Avoid using names that require additional comments to explain, e.g., use elapsedTime instead of et
+6. Action-Oriented Method Names: Use verbs or verb phrases to clearly indicate what the method does, making the purpose of the method immediately clear, e.g., DestroyObject, FindPlayer.
 
 
 ## Using statements
