@@ -55,7 +55,7 @@ The guidelines in this document are used by **Threye interactive** when developi
 
 ## Namespace conventions
 1. Use the prefix of the namespace with a company name to prevent conflicts.
-2. Use PascalCase and separate namespace components with a period - i.e., `NextWave.SubCore`.
+2. Use PascalCase and separate namespace components with a period - i.e., `Threye.Simulator`.
 3. Prefer using plural namespace and don't use generic type names such as `Element`, `Node`, `Log`, and `Message`.
 4. Do not use the same name as types in namespaces within a single application model.
 
@@ -64,7 +64,6 @@ The guidelines in this document are used by **Threye interactive** when developi
 1. For Unity-based projects, list all **Unity** using statements at the top. **NOTE**: TMPro should be considered a Unity class, so typically starts the list.
 2. List any Unity package or third-party plugins next.
 3. List standard C# using statements next.
-4. List internal (NextWave) using statements last.
 5. Order each of the above groups alphabetically.
 6. Add a blank line between each using group (for clarity).
 7. *EXCEPTION*: If specific functionality is required to override the above, order as necessary and add a comment explaining the reasoning behind the decision.
