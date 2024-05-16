@@ -134,6 +134,7 @@ The guidelines in this document are used by **Threye interactive** when developi
 2. Do use two parameters named sender and e in event handlers.
 `public delegate void ClickedEventHandler(object sender, ClickedEventArgs e);`
 3. Do name event argument classes with the `EventArgs` suffix.
+4. Only call the events using Invoke().
 
 
 ## Delegates
