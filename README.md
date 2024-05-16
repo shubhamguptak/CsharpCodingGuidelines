@@ -60,6 +60,8 @@ The guidelines in this document are used by **Threye interactive** when developi
 ## Modular Design
 1. Component-Based Design: Decompose features into smaller, reusable components to make it easier to manage and update them.
 2. Single Responsibility Principle: Each class or component should have one reason to change, meaning it should only have one job or responsibility.
+3. Component Reusability: Design prefabs to be as modular as possible. This allows you to mix and match components to create variations without duplicating the entire prefab.
+4. Prefab Variants: Use prefab variants to create different versions of a base prefab. This is useful for creating different types of a base model, such as enemies with varying abilities or appearances while sharing the same underlying structure.
 
 ## Asynchronous Programming
 1. Use async and await: For tasks that can potentially block, such as loading resources or querying a database, use asynchronous programming to keep the game running smoothly.
