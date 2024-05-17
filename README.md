@@ -2,12 +2,12 @@
 
 Last updated: 2024-05-16/Shubham
 
-The guidelines in this document are used by **Threye interactive** when developing software written in `C#`.
+The guidelines in this document can be used by software development companies when developing software written in `C#`.
 
-**NOTE**: Some of these guidelines are based on standard Microsoft C# guidelines and may not be totally relevant to Threye's Unity development.
+**NOTE**: Some of these guidelines are based on standard Microsoft C# guidelines and may not be totally relevant to your company's Unity development.
 
 
-## Threye copyright text
+## Company copyright text
 1. Add at the top of each script.
 2. If the project spans multiple years, add the range - i.e., `2021-2024`. No spaces.
 3. Update the copyright year only when a component is modified.
