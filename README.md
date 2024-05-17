@@ -1,4 +1,4 @@
-# Threye Coding Guidelines
+# C# Coding Guidelines
 
 Last updated: 2024-05-16/Shubham
 
@@ -14,7 +14,7 @@ The guidelines in this document are used by **Threye interactive** when developi
 ```sh
 // Brief description of the purpose
 //
-// Copyright (C) {currentYear} Threye Interactive.
+// Copyright (C) {currentYear} Company name.
 // All Rights Reserved.
 ```
 
@@ -73,7 +73,7 @@ The guidelines in this document are used by **Threye interactive** when developi
 
 ## Namespace conventions
 1. Use the prefix of the namespace with a company name to prevent conflicts.
-2. Use PascalCase and separate namespace components with a period - i.e., `Threye.Simulator`.
+2. Use PascalCase and separate namespace components with a period - i.e., `Company.Plugin`.
 3. Prefer using plural namespace and don't use generic type names such as `Element`, `Node`, `Log`, and `Message`.
 4. Do not use the same name as types in namespaces within a single application model.
 5. Descriptive Names: Choose names that clearly and concisely convey the purpose of the variable. Avoid using names that require additional comments to explain, e.g., use elapsedTime instead of et
@@ -341,4 +341,3 @@ public Car(Color bodyColor, int numOfDoors, int sizeOfWheels)
     * Trailing Spaces
     * Visual Studio Intellisense
 
-## Copyright (C) 2024 Threye, Inc.
