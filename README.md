@@ -22,7 +22,6 @@ The guidelines in this document are used by **Threye interactive** when developi
 1. One statement per line.
 2. One declaration per line.
 3. Line indent with one tab - four (4) spaces.
-4. Spaces, NOT tabs. **NEVER** tabs.
 5. Use parentheses to make clauses in an expression more explicit.
 6. A single blank line at the end of every file.
 
@@ -126,7 +125,6 @@ The guidelines in this document are used by **Threye interactive** when developi
 1. Do name properties using a noun, noun phrase, or adjective.
 2. Do name collection properties with a plural phrase describing the items in the collection instead of using a singular phrase followed by `List` or `Collection`.
 3. Do name Boolean properties with an affirmative phrase - i.e., `“Is”`, `“Can”` or `“Has”`.
-4. Consider giving a property the same name as its type.
 
 
 ## Events
@@ -193,7 +191,6 @@ public static void DelMethod(string str)
 6. Always add a blank line _**before**_ and _**after**_ conditional code.
 7. Indent the `#if` to the _**left**_ of the code - so that the code is aligned at the expected position (as if there was no conditional).
 8. If the conditional code is more than one line, insert blank lines _**before**_ and _**after**_. This applies to the `#else` condition.
-9. _NOTE_: `this.GetCaller()` returns the calling method's name - often useful to know what emitted the text...
 
 
 ## Best practices for exceptions
@@ -319,17 +316,13 @@ public Car(Color bodyColor, int numOfDoors, int sizeOfWheels)
 10. Do specify **floating-point numbers** as `n.nf` - i.e., `1.0f`, `2.1f`, to at least one (1) decimal place.
 11. Do use **`protected`** or **`private`** specifiers to the class member if they will not be accessed from another class.
 12. Do use **`protected`** specifiers for standard Unity methods (`Awake()`, `Start()`, `OnEnable()`, etc.)
-13. Do use `[CalledBy(CallerType.xxx)]` on all Unity-called methods (using the relevant caller type - `Unity`, `UnityUI`, `UnityEvent`, etc.)
-14. Do use `[CalledBy(CallerType.xxx, "comment")]` when methods are called from event handlers where the connection isn't obvious (i.e., Unity inspector assigned) - add a concise comment describing the caller.
 15. Do remove unused functions or blocks of commented-out code.
 16. Do NOT use **MAGIC NUMBERS**. Consider replacing the number with a named constant. Place those constants in a common file (i.e., `S.CS` or some variation thereof).
 17. Avoid using the component name in variables of that type.
 18. Do group related methods together.
-19. Do create `.gitignore` file before pushing the repository to the origin. For more information, please refer to [.gitignore Trello card](https://trello.com/c/R56BtE1g/21-gitignore-for-unity-projects) 
 20. MacOS users should ensure that `*.DS_Store` is present in the `.gitignore` file to remove temporary MacOS files before committing any files.
 21. Do use modern language features to improve readability - expression-bodied methods, local functions, etc.
 22. Do use verbose debug logs - they can help track issues faster than just staring at the code...
-23. Do use the many extensions that exist - they'll make your code more readable and maintainable. Look in `SubCore\Scripts\Utility\Extensions`.
 
 
 ## Recommended tools to help improve overall code quality
